@@ -9,7 +9,8 @@ class AuthSettings(BaseSettings):
     db_port: int = 5432
     db_name: str = 'AuthDB'
     db_user: str = 'postgres'
-    db_password: str = 'Tabasalu7'
+    db_password: str = 'postgres'
+    jwt_secret_key: str
 
     @property
     def async_database_url(self) -> str:
